@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Codigo CSS para dispositivo escritorio */
+
+@media (min-width: 480px) {
+
+
 /* RESET */
 
 * {
@@ -16,6 +21,47 @@ body {
 
 .nav-header-menu {
     display: flex;
+}
+
+.menu-check, .fa-bars, .fa-times {
+    display: none;
+    visibility: hidden;
+}
+
+
+#list-header li {
+    display:inline;
+    margin-left:10px;
+    margin-right:10px;
+ 
+}
+
+#btn-header-menu {
+    border-radius: 50px;
+    background: #8B48BF;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-style: none;
+    color:#ffffff
+}
+
+#menu-header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+#list-header a:hover {
+    color:black;
+    background-color:rgba(211, 211, 211, 0.514);
 }
 
 /* MAIN */
@@ -209,8 +255,9 @@ footer {
 
 }
 
-ul {
+li {
     list-style: none;
+    text-decoration: none;
 }
 
 .inbox-email {
@@ -329,3 +376,97 @@ ul {
     stroke: #ffffff;
     stroke-width: 1;
 }
+
+
+}
+
+
+
+/** Código CSS dispositivo mobile **/
+
+@media (max-width: 480px) {
+    
+   
+     body {
+        font-family: sans-serif;
+      }
+      
+      li {
+        list-style: none;
+        text-align: right;
+        text-decoration: none;
+      }
+
+      nav{
+        padding-right:31px;
+        float: right;
+      }
+      .menu-responsive a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: none;
+        max-width: 200px;
+        background: #ffffff;
+        font-variant: small-caps;
+        text-shadow: 1px 1px black;
+      }
+
+      .menu-responsive input[type="checkbox"], .fa-times{
+        color:transparent;
+      }
+      
+      .menu-responsive input[type="checkbox"], .menu-responsive .fa-bars, .menu-responsive .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+      }
+      
+      .menu-responsive .fa-bars, .menu-responsive .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+      }
+      
+      .menu-responsive input[type="checkbox"] {
+        opacity: 0;
+      }
+      
+      .menu-responsive {
+        color: rgb(0, 0, 0);
+        position: relative;
+        background: #ffffff;
+        min-height: 48px;
+      }
+      
+      .menu-responsive nav {
+        display: none;
+      }
+      
+      /* Ocultar y mostrar menu dependiendo del estado del input checkbox */
+      .menu-responsive input:checked ~ nav {
+        display: block;
+      }
+      
+      .menu-responsive input:checked ~ .fa-bars {
+        display: none;
+      }
+      
+      .menu-responsive input:not(:checked) ~ .fa-times {
+        display: none;
+      }
+    
+      #btn-header-menu{
+        visibility: hidden;
+      }
+
+      #menu-header {
+        justify-content: space-between;
+      }
+
+    }
