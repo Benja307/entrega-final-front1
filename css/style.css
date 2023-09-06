@@ -466,22 +466,22 @@ li {
 
 @media (max-width: 480px) {
     
-   
-     body {
+
+    body {
         font-family: sans-serif;
-      }
-      
-      li {
+    }
+    
+    li {
         list-style: none;
         text-align: right;
         text-decoration: none;
-      }
+    }
 
-      nav{
+    nav{
         padding-right:31px;
         float: right;
-      }
-      .menu-responsive a {
+    }
+    .menu-responsive a {
         color: inherit;
         text-decoration: none;
         display: block;
@@ -491,13 +491,13 @@ li {
         background: #ffffff;
         font-variant: small-caps;
         text-shadow: 1px 1px black;
-      }
+    }
 
-      .menu-responsive input[type="checkbox"], .fa-times{
+    .menu-responsive input[type="checkbox"], .fa-times{
         color:transparent;
-      }
-      
-      .menu-responsive input[type="checkbox"], .menu-responsive .fa-bars, .menu-responsive .fa-times {
+    }
+    
+    .menu-responsive input[type="checkbox"], .menu-responsive .fa-bars, .menu-responsive .fa-times {
         position: absolute;
         box-sizing: border-box;
         margin: 0;
@@ -506,47 +506,151 @@ li {
         top: 0;
         width: 48px;
         height: 48px;
-      }
-      
-      .menu-responsive .fa-bars, .menu-responsive .fa-times {
+    }
+    
+    .menu-responsive .fa-bars, .menu-responsive .fa-times {
         font-size: 48px;
         pointer-events: none;
-      }
-      
-      .menu-responsive input[type="checkbox"] {
+    }
+    
+    .menu-responsive input[type="checkbox"] {
         opacity: 0;
-      }
-      
-      .menu-responsive {
+    }
+    
+    .menu-responsive {
         color: rgb(0, 0, 0);
         position: relative;
         background: #ffffff;
         min-height: 48px;
-      }
-      
-      .menu-responsive nav {
+    }
+    
+    .menu-responsive nav {
         display: none;
-      }
+    }
 
       /* Ocultar y mostrar menu dependiendo del estado del input checkbox */
-      .menu-responsive input:checked ~ nav {
+    .menu-responsive input:checked ~ nav {
         display: block;
-      }
-      
-      .menu-responsive input:checked ~ .fa-bars {
+    }
+
+    .menu-responsive input:checked ~ .fa-bars {
         display: none;
-      }
-      
-      .menu-responsive input:not(:checked) ~ .fa-times {
+    }
+
+    .menu-responsive input:not(:checked) ~ .fa-times {
         display: none;
-      }
+    }
     
-      #btn-header-menu{
+    #btn-header-menu{
         visibility: hidden;
-      }
+    }
 
-      #menu-header {
+    #menu-header {
         justify-content: space-between;
-      }
+    }
 
-    } 
+    /* estilo de fondo y color del pie de página */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 30px 0;
+    }
+
+    /* Alinea el contenido footer */
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Alinea el logo  */
+    .caja-redes {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+  /*  iconos de redes sociales */
+    .redes-sociales a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .redes-sociales a:hover {
+    color: #8B48BF; 
+       /* Cambia  color al pasar el mouse */
+    }
+
+      /* menú  */
+    .seccion-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .menu-footer {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu-footer a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .menu-footer a:hover {
+        color: #8B48BF;             
+        /* Cambia color al pasar el mouse */
+    }
+
+       /* formulario de suscripción */
+    .formulario {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .inbox-email {
+        width: 250px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 50px;
+        border: none;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .btn-go {
+        width: 60px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: #8B48BF;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn-go:hover {
+        background-color: white;
+        color: #8B48BF;
+    }
+
+     /* Estilizar el texto de derechos de autor */
+    .Copyright {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 20px;
+        color: #8C8C94;
+    }
+}
+

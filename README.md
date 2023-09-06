@@ -1,7 +1,7 @@
 # entrega-final-front1
 # Participantes
 
-1. Karla Candelaria Ramos Buenrostro -
+1. Karla Candelaria Ramos Buenrostro - kandy.buenrostro1@gmail.com
 2. Diego Benjamín Corujo Alanís - benjacorujo15@gmail.com
 
 ## Division de tareas
