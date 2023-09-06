@@ -2,7 +2,7 @@
 
 /* Codigo CSS para dispositivo escritorio */
 
-@media (min-width: 480px) {
+ @media (min-width: 480px) {
 
 
 /* RESET */
@@ -458,7 +458,7 @@ li {
 }
 
 
-}
+} 
 
 
 
@@ -527,7 +527,7 @@ li {
       .menu-responsive nav {
         display: none;
       }
-      
+
       /* Ocultar y mostrar menu dependiendo del estado del input checkbox */
       .menu-responsive input:checked ~ nav {
         display: block;
@@ -549,4 +549,4 @@ li {
         justify-content: space-between;
       }
 
-    }
+    } 
