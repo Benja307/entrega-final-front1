@@ -13,4 +13,6 @@
 #
 
 2. CSS
-#
+### header -> Karla
+### main -> Benjamin
+### footer -> Karla
