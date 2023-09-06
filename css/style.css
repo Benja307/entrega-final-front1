@@ -654,3 +654,50 @@ li {
     }
 }
 
+@media (max-width: 480px){
+    .banner {
+        width: 100%;
+        flex-direction: column;
+        padding: 4rem 2.5rem;
+        gap: 6.25rem;
+    }
+
+    .img-banner {
+        width: 100%;
+    }
+
+    .content-banner {
+        width: 100%;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 3.125rem;
+        letter-spacing: -0.035em;
+    }
+
+    .question {
+        flex-direction: column;
+        background-color: #3CDDF3;
+    }
+
+    .question h2, .question p{
+        width: 90%;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        gap: 0;
+    }
+
+    .card-title{
+        background: #8B48BF4D;
+        padding: 10px;
+    }
+
+}
+
