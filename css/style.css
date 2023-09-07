@@ -468,8 +468,6 @@ a{
 }
 
 
-} 
-
 
 
 /** CÓDIGO CSS MEDIA QUERY PARA MOBILE**/
@@ -496,8 +494,6 @@ a{
         margin-top: 16px;
     }
 
-    .menu-check,
-    .fa-times,
     #icon-menuMobile {
         visibility: visible;
         display: flex;
@@ -509,32 +505,12 @@ a{
         text-decoration: none;
     }
 
-    nav {
-        padding-right: 31px;
-        float: right;
-    }
-    
-
-    .menu-responsive a {
-        color: inherit;
-        text-decoration: none;
-        display: block;
-        padding: 10px 20px;
-        border-bottom: none;
-        max-width: 200px;
-        background: #ffffff;
-        font-variant: small-caps;
-        text-shadow: 1px 1px black;
+    #list-header {
+        display: none;
+        visibility: collapse;
     }
 
-    .menu-responsive input[type="checkbox"],
-    .fa-times {
-        color: transparent;
-    }
-
-    .menu-responsive input[type="checkbox"],
-    .menu-responsive #icon-menuMobile,
-    .menu-responsive .fa-times {
+    .menu-responsive #icon-menuMobile{
         position: absolute;
         box-sizing: border-box;
         margin: 0;
@@ -546,13 +522,9 @@ a{
     }
 
     .menu-responsive #icon-menuMobile,
-    .menu-responsive .fa-times {
+    .menu-responsive {
         font-size: 48px;
         pointer-events: none;
-    }
-
-    .menu-responsive input[type="checkbox"] {
-        opacity: 0;
     }
 
     .menu-responsive {
@@ -566,18 +538,6 @@ a{
         display: none;
     }
 
-    /* Ocultar y mostrar menu dependiendo del estado del input checkbox */
-    .menu-responsive input:checked~nav {
-        display: block;
-    }
-
-    .menu-responsive input:checked~#icon-menuMobile {
-        display: none;
-    }
-
-    .menu-responsive input:not(:checked)~.fa-times {
-        display: none;
-    }
 
     #btn-header-menu {
         visibility: hidden;
