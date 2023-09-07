@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Codigo CSS para dispositivo escritorio */
-
-
-
-
 /* RESET */
 
 * {
@@ -35,6 +31,7 @@ body {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
+
 
 }
 
@@ -347,10 +344,9 @@ footer {
 
 li {
     list-style: none;
-
 }
 
-a {
+a{
     text-decoration: none;
 }
 
@@ -472,8 +468,7 @@ a {
 }
 
 
-
-
+} 
 
 
 
@@ -518,6 +513,7 @@ a {
         padding-right: 31px;
         float: right;
     }
+    
 
     .menu-responsive a {
         color: inherit;
@@ -586,6 +582,59 @@ a {
     #btn-header-menu {
         visibility: hidden;
     }
+
+    #menu-header {
+        justify-content: space-between;
+    }
+
+/* MAIN */
+
+.banner {
+    width: 100%;
+    flex-direction: column;
+    padding: 4rem 2.5rem;
+    gap: 6.25rem;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.content-banner {
+    width: 100%;
+    padding: 0;
+}
+
+h1{
+    font-size: 3.125rem;
+    letter-spacing: -0.035em;
+}
+
+.question {
+    flex-direction: column;
+    background-color: #3CDDF3;
+}
+
+.question h2, .question p{
+    width: 90%;
+}
+
+.cards {
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    gap: 0;
+}
+
+.card-title{
+    background: #8B48BF4D;
+    padding: 10px;
+}
+
+
+/* FOOTER */
 
     /* estilo de fondo y color del pie de página */
     footer {
