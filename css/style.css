@@ -122,6 +122,7 @@ h1 {
     border: 0;
     background-color: #8B48BF;
     color: white;
+    transition: all 1s;
 }
 
 .btn-v:hover {
@@ -182,6 +183,7 @@ h1 {
     font-weight: 700;
     line-height: 1.5rem;
     padding: 0.625rem 1.56rem;
+    transition: all 1s;
 }
 
 .card-btn:hover {
@@ -228,6 +230,16 @@ h1 {
 .player-card {
     text-align: center;
     margin: 4.625rem 0 2.8rem;
+    transition: all 2s;
+}
+
+.player-card:hover{
+    box-shadow: 3px 3px 10px;
+    transform: scale(1.1,1.1);
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .player-card .nombre {
@@ -240,7 +252,7 @@ h1 {
     color: #B9B9C1;
 }
 
-.btn-player {
+.btn-player{
     width: 134px;
     height: 44px;
     color: white;
@@ -250,6 +262,7 @@ h1 {
     font-size: 13px;
     font-weight: 500;
     line-height: 19px;
+    transition: all 1s;
 }
 
 .btn-player:hover {
@@ -264,6 +277,7 @@ h1 {
     color: white;
     background-color: #8B48BF;
     margin-top: 6rem;
+    padding: 3.125rem 10rem;
 }
 
 .best-team article {
@@ -273,11 +287,15 @@ h1 {
 }
 
 .best-team article h2 {
-    width: 47.63%;
+    width: 90%;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 3rem;
     text-align: left;
+}
+
+.best-team-btn{
+    justify-content: end;
 }
 
 .best-team article button {
@@ -286,7 +304,10 @@ h1 {
     padding: 10px;
     border-radius: 50px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
+}
 
+.best-team article button:hover{
+    cursor: pointer;
 }
 
 /** FOOTER **/
